@@ -1,4 +1,3 @@
-// Reveal sections on scroll
 const sections = document.querySelectorAll(".page-section");
 
 const observer = new IntersectionObserver(
@@ -14,8 +13,6 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => observer.observe(section));
 
-
-// Navigation active state + smooth scroll
 const navLinks = document.querySelectorAll("nav a");
 
 navLinks.forEach(link => {
@@ -33,9 +30,6 @@ navLinks.forEach(link => {
     }
   });
 });
-
-
-// Contact form submit
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
@@ -46,8 +40,6 @@ if (contactForm) {
   });
 }
 
-
-// Social links
 const socialLinks = {
   facebook: "https://facebook.com",
   instagram: "https://instagram.com",
@@ -55,7 +47,6 @@ const socialLinks = {
 };
 
 Object.entries(socialLinks).forEach(([key, url]) => {
-  // ❗ FIXED: selector must be a string
   const icon = document.querySelector(`.fa-${key}`);
 
   if (icon && icon.parentElement) {
@@ -65,8 +56,6 @@ Object.entries(socialLinks).forEach(([key, url]) => {
   }
 });
 
-
-// Read more modals
 const readMoreButtons = document.querySelectorAll(".read-more");
 
 readMoreButtons.forEach(button => {
@@ -91,3 +80,4 @@ readMoreButtons.forEach(button => {
     }
   });
 });
+
