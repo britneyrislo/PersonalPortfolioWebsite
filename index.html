@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio Website</title>
+
+  <link rel="icon" type="image" href="backg.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="islo_style.css">
+</head>
+<body>
+<div id="top"></div>
+
+<header>
+  <h1>PORTFOLIO</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#top">HOME</a></li>
+      <li><a href="#about" id="aboutLink">ABOUT ME</a></li>
+      <li><a href="#projects" id="projectsLink">PROJECTS</a></li>
+      <li><a href="#contact" id="contactLink">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero page-section">
+  <div class="intro">
+    <h2>HELLO, I AM</h2>
+    <h1>BRITNEY ISLO <span class="arrow">➜</span></h1>
+    <h3>WEB DESIGNER</h3>
+    <p>
+      I enjoy creating functional and visually engaging websites.
+      My goal is to continuously improve my skills through real-world
+      projects and collaboration.
+    </p>
+
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+
+  <div class="profile">
+    <img src="BritneyPortfolio.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="page-section about-light">
+  <div class="section-box">
+    <h2>About Me</h2>
+
+    <div class="about-flex">
+      <img src="html_logo-removebg-preview.png">
+      <img src="css_logo-removebg-preview.png">
+      <img src="js_logo-removebg-preview.png">
+    </div>
+
+    <p>
+      Hi, I’m <strong>Britney Islo</strong>, a web designer from the Philippines
+      who enjoys creating clean, responsive, and modern websites.
+    </p>
+
+    <p>
+      I specialize in <strong>HTML, CSS, and JavaScript</strong> and enjoy
+      transforming ideas into functional digital experiences.
+    </p>
+
+    <div class="about-experience">
+      <h3>Work Experience</h3>
+
+      <div class="experience-item">
+        <h4>LDRRM Office</h4>
+        <span>Summer Job • 22 Days</span>
+        <p>
+          Completed a 22-day summer job at the Local Disaster Risk Reduction and
+          Management Office. Assisted with administrative tasks such as
+          documentation, data organization, and office support operations.
+          This experience strengthened my organizational skills and familiarity
+          with office workflows.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-goals">
+      <h3>Career Goal & Strengths</h3>
+
+      <p>
+        My goal is to grow as a front-end web developer by working on meaningful
+        projects that solve real-world problems. I aim to continuously improve
+        my design and coding skills while gaining hands-on experience in
+        professional environments.
+      </p>
+
+      <ul class="strengths">
+        <li>✔ Detail-oriented and organized</li>
+        <li>✔ Strong willingness to learn</li>
+        <li>✔ Creative problem-solving skills</li>
+        <li>✔ Good communication and teamwork</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="page-section contact-dark">
+  <div class="section-box projects-box">
+    <h2>Projects</h2>
+    <br>
+    <article class="project-card">
+      <img src="registration.jpg" alt="SK E-Registration System">
+      <h3>SK E-Registration System</h3>
+      <span>Cansague Sur, San Isidro, Bohol</span>
+      <p>A web-based registration system developed for the Sangguniang Kabataan.</p>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Form handling & layout design</li>
+      </ul>
+      <button class="read-more" data-modal="modal1">Read More</button>
+    </article>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content contact-dark full">
+        <span class="close">&times;</span>
+        <h2>SK E-Registration System</h2>
+        <p>
+          Full description: Developed a digital registration system for Barangay Cansague Sur SK.
+          Features include user-friendly forms, responsive design, and data management for youth registration.
+        </p>
+        <ul>
+          <li>Responsive design</li>
+          <li>Data validation</li>
+          <li>User-friendly UI</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <article class="project-card">
+      <img src="system.jpg" alt="Cooperative Membership Records">
+      <h3>Cooperative Membership Records</h3>
+      <span>Administrative System</span>
+      <p>
+        A system focused on managing cooperative membership information,
+        including member records, documentation, and workflows.
+      </p>
+      <ul>
+        <li>Member data organization</li>
+        <li>Record documentation</li>
+        <li>Administrative support</li>
+      </ul>
+      <button class="read-more" data-modal="modal2">Read More</button>
+    </article>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content contact-dark full">
+        <span class="close">&times;</span>
+        <h2>Cooperative Membership Records</h2>
+        <p>
+          Full description: Managed cooperative member data efficiently, including personal info,
+          membership records, and reports for administrative purposes.
+        </p>
+        <ul>
+          <li>Data organization</li>
+          <li>Digital documentation</li>
+          <li>Reporting & workflow</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <article class="project-card">
+      <img src="document.jpg" alt="Administrative Documentation System">
+      <h3>Administrative Documentation System</h3>
+      <span>Office-Based System</span>
+      <p>
+        An administrative system for digital documentation and office workflow organization.
+      </p>
+      <ul>
+        <li>Data entry & management</li>
+        <li>Digital records</li>
+        <li>Workflow organization</li>
+      </ul>
+      <button class="read-more" data-modal="modal3">Read More</button>
+    </article>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content contact-dark full">
+        <span class="close">&times;</span>
+        <h2>Administrative Documentation System</h2>
+        <p>
+          Full description: Focused on digital documentation, form processing,
+          and efficient workflow management for office environments.
+        </p>
+        <ul>
+          <li>Data entry & management</li>
+          <li>Digital records</li>
+          <li>Workflow organization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page-section contact-dark">
+  <div class="section-box contact-box">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> britneyislo07@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +63 963 448 0630</p>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2025 Britney Islo. All Rights Reserved
+  <p>Thank You!</p>
+</footer>
+
+<script src="britney_script.js"></script>
+</body>
+</html>
